@@ -1,15 +1,19 @@
 # Flask Skeleton
 
-Flask starter project...
-
-[![Build Status](https://travis-ci.org/realpython/flask-skeleton.svg?branch=master)](https://travis-ci.org/realpython/flask-skeleton)
+Flask and Reactjs starter project...
 
 ## Quick Start
 
 ### Basics
 
-1. Activate a virtualenv
-1. Install the requirements
+#### Activate a virtualenv
+```sh
+$ mkvirtualenv project
+```
+#### Install the requirements
+```sh
+$ pip install -r requirements.txt
+```
 
 ### Set Environment Variables
 
@@ -33,6 +37,13 @@ $ python manage.py db init
 $ python manage.py db migrate
 $ python manage.py create_admin
 $ python manage.py create_data
+```
+
+### Build JavaScript assets
+
+```sh
+$ cd project/client && npm i
+$ node_modules/.bin/webpack --watch
 ```
 
 ### Run the Application

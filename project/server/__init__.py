@@ -22,7 +22,7 @@ from flask.ext.sqlalchemy import SQLAlchemy
 app = Flask(
     __name__,
     template_folder='../client/templates',
-    static_folder='../client/static'
+    static_folder='../client'
 )
 
 

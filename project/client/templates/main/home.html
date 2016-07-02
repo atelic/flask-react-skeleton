@@ -3,9 +3,13 @@
 {% block content %}
 
 <div class="body-content">
-  <div class="row">
-    <h1>Welcome!</h1>
+    <div class="row">
+        <div id="welcome">
+        </div>
   </div>
 </div>
 
+{% endblock %}
+{% block js %}
+<script src="{{ url_for('static', filename='js/index.js') }}"></script>
 {% endblock %}
